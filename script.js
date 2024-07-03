@@ -13,7 +13,7 @@ btn.addEventListener("click",async()=>{
     div.innerHTML=` <b style="font-size:20px;font-weight:200;">Meaning: ${meaningnoun}</b>`
     div2.innerHTML=`parts of speech: <b style="font-size:30px;font-weight:500;">${pos}</b>`
     //!gifs    
-    let tenorkey="AIzaSyBA9v0R6ozHDl63VfCg1uTv7sDW0wHZY_M"
+    let tenorkey="your api key"
     let tenorapi=  `https://tenor.googleapis.com/v2/search?q=${value}&key=AIzaSyBA9v0R6ozHDl63VfCg1uTv7sDW0wHZY_M&client_key=my_test_app&limit=2`
     let gifdata=await fetch(tenorapi)
     let finalgif=await gifdata.json()
